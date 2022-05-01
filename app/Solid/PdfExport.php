@@ -2,10 +2,10 @@
 
 namespace App\Solid;
 
-class PdfExport
+class PdfExport implements SaleFormatExportInterface
 {
     public function export($data)
     {
-        return 'PDF format';
+        return 'PDF export';
     }
 }
