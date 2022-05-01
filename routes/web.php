@@ -16,14 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-
-    $saleReports = new SaleReports;
-    $pdfExport = new PdfExport;
-
-    return $pdfExport->export(
-        $saleReports->between('1 jan 2022', '5 feb 2022')
-    );
-
-
     return view('welcome');
 });
